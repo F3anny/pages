@@ -1,0 +1,149 @@
+body{
+    background-image: url("paper.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 30px;
+
+}
+.title{
+    text-align: center;
+    animation:splashIn 2s ease-out forwards;
+}
+@keyframes splashIn{
+    0%{
+        opacity:0;
+        transform:scale(0.5)
+    }
+    100%{
+        opacity:1;
+        transform:scale(1)
+    }
+}
+.container{
+    column-width: 200px;
+    column-gap:2em;
+    padding-bottom: 10px;
+    column-count: 4;
+}
+.paragraph{
+    margin-top: 0px;
+    font-size: 0.9em;
+    text-align: justify;
+}
+.img1{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+}
+.img{
+    width:100%;
+    background-color: #F0F0E8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.img2{
+    float:right;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+.pull-quote {
+    float: right;
+    width: 40%;
+    margin: 10px 0 10px 20px;
+    padding: 25px;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #223d5a;
+    background-color: #bd9e9e;
+    text-align: center;
+}
+nav{
+    background-color:#223d5a;
+    
+}
+ul{
+   
+    list-style-type: none;
+    padding: 20px;
+}
+li{
+    display:inline;
+    padding: 20px;
+   
+    
+}
+li a{
+    text-decoration: none;
+    color: ivory;
+
+   
+
+}
+li a:hover{
+    cursor:pointer;
+    color:#bd9e9e;
+}
+li a.active {
+    background-color: #666;
+}
+@media(max-width:768px){
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    li{
+        display: block;
+        padding: 10px;
+    }
+
+}
+@media(max-width:1024px){
+    .container{
+        column-count:2;
+    }
+    
+
+
+}
+@media(max-width:600px){
+    .container{
+        column-count:1;
+    }
+}
+@media(max-width:768px){
+    .img1,.img2{
+        width:100%;
+        max-width:none;
+        float:none;
+        
+    }
+    .container{
+        column-count: 1;
+    }
+}
+@media(max-width:768px){
+    .pull-quote{
+        float:none;
+        width:90%;
+        margin:20px auto;
+        text-align:center;
+    }
+    footer{
+        font-size:1em;
+        padding:15px;
+    }
+}
+    
+
